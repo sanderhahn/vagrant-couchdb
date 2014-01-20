@@ -9,7 +9,7 @@ Visit [http://localhost:5984/_utils/](http://localhost:5984/_utils/) for Futon o
 # Enable CORS
 
 ```sh
-export HOST=http://admin:password@couchdb:5984
+export HOST=http://admin:password@localhost:5984
 curl -X PUT $HOST/_config/httpd/enable_cors -d '"true"'
 curl -X PUT $HOST/_config/cors/origins -d '"*"'
 curl -X PUT $HOST/_config/cors/credentials -d '"true"'
